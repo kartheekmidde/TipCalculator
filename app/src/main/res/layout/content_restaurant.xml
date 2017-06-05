@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="sp4rk.in.tipcalculator.RestaurantActivity"
+                tools:showIn="@layout/activity_restaurant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/totalBillTextView"
+                android:layout_weight="1"
+                style="@style/CustomTextView"
+                android:text="@string/total_bill"/>
+
+            <EditText
+                android:id="@+id/billEditText"
+                style="@style/EditableEditText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tipPercentTextView"
+                style="@style/CustomTextView"
+                android:text="@string/tip_percent"/>
+
+            <TextView
+                android:id="@+id/percentTextView"
+                style="@style/CustomTextView"
+                android:layout_toRightOf="@id/tipPercentTextView"
+                android:text="16%"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <SeekBar
+                    android:id="@+id/tipSeekBar"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <TextView
+                    android:id="@+id/fifteenPercent"
+                    style="@style/CustomTextView"
+                    android:layout_alignParentLeft="@id/tipSeekBar"
+                    android:layout_below="@id/tipSeekBar"
+                    android:text="15%"/>
+
+                <TextView
+                    android:id="@+id/twentyFivePercent"
+                    style="@style/CustomTextView"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tipSeekBar"
+                    android:text="25%"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/totalTipTextView"
+                style="@style/CustomTextView"
+                android:layout_weight="1"
+                android:text="@string/total_tip"/>
+
+            <EditText
+                android:id="@+id/totalTipEditText"
+                style="@style/NonEditableEditText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/taxTextView"
+                style="@style/CustomTextView"
+                android:layout_weight="1"
+                android:text="@string/total_tax"/>
+
+            <EditText
+                android:id="@+id/taxEditText"
+                style="@style/EditableEditText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/totalTextView"
+                style="@style/CustomTextView"
+                android:layout_weight="1"
+                android:text="@string/grand_total"/>
+
+            <EditText
+                android:id="@+id/totalEditText"
+                style="@style/NonEditableEditText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/split"
+                style="@style/CustomTextView"
+                android:text="@string/ways_to_split"
+                android:layout_weight="1"/>
+
+            <Spinner
+                android:id="@+id/splitSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:entries="@array/splits_array"></Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/splitAmountTextView"
+                style="@style/CustomTextView"
+                android:layout_weight="1"
+                android:text="@string/split_amount"/>
+
+            <EditText
+                android:id="@+id/splitAmountEditText"
+                style="@style/NonEditableEditText"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

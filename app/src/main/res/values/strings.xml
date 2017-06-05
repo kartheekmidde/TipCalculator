@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TipCalculator</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="restaurant_button">RESTAURANT</string>
+    <string name="pizza_button">PIZZA DELIVERY</string>
+    <string name="title_activity_restaurant">RestaurantActivity</string>
+    <string name="title_activity_pizza">PizzaActivity</string>
+
+    <string name="restaurant">Restaurant</string>
+    <string name="pizza_delivery">Pizza Delivery</string>
+    <string name="total_bill">Total Bill (pre-tax)</string>
+    <string name="tip_percent">Tip Percent</string>
+    <string name="total_tip">Total Tip Amount</string>
+    <string name="total_tax">Total Tax</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="ways_to_split">How many ways to split?</string>
+    <string name="split_amount">Split Amount</string>
+    <string-array name="splits_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="original_total">Original Total</string>
+    <string name="poor">Poor 10%</string>
+    <string name="common">Common 15%</string>
+    <string name="excellent">Excellent 20%</string>
+    <string name="bad_weather">Bad Weather? +$1</string>
+    <string name="really_bad_weather">Really Bad Weather? +$2</string>
+    <string name="more_than_3_miles">More than 3 miles? +$1</string>
+    <string name="more_than_5_miles">More than 5 miles? +$2</string>
+    <string name="minimum_tipping">Minimum tipping rule. $3</string>
+    <string name="large_order">Large order ($100+) tipping rule. Common 10%</string>
+</resources>
